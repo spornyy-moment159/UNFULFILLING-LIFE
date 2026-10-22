@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://b7sdd347r346w"]
+
+[ext_resource type="PackedScene" uid="uid://dur20smb6jsgr" path="res://levels/level_base.tscn" id="1_vosiq"]
+[ext_resource type="Script" uid="uid://csgr1mtvjjdf7" path="res://levels/level_04.gd" id="2_fdgl0"]
+[ext_resource type="Texture2D" uid="uid://drxm8xubnbj30" path="res://resourses/animated_texture/william.tres" id="3_5p57d"]
+[ext_resource type="Texture2D" uid="uid://31ygj3fcjfv7" path="res://resourses/animated_texture/exit.tres" id="4_r8aof"]
+
+[sub_resource type="Curve2D" id="Curve2D_5p57d"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 42, 100, 0, 0, 0, 0, 162, 96, 0, 0, 0, 0, 163, 330, 0, 0, 0, 0, 254, 327, 0, 0, 0, 0, 251, 95, 0, 0, 0, 0, 384, 99, 0, 0, 0, 0, 384, 335, 0, 0, 0, 0, 474, 331, 0, 0, 0, 0, 468, 108, 0, 0, 0, 0, 652, 101, 0, 0, 0, 0, 655, 233, 0, 0, 0, 0, 722, 237, 0, 0, 0, 0, 720, 100, 0, 0, 0, 0, 1086, 104, 0, 0, 0, 0, 1089, 256, 0, 0, 0, 0, 1148, 245, 0, 0, 0, 0, 1152, 109, 0, 0, 0, 0, 1212, 105, 0, 0, 0, 0, 1214, 279, 0, 0, 0, 0, 1243, 314, 0, 0, 0, 0, 1269, 296, 0, 0, 0, 0, 1270, 104, 0, 0, 0, 0, 1425, 102, 0, 0, 0, 0, 1422, 310, 0, 0, 0, 0, 1486, 308, 0, 0, 0, 0, 1483, 109, 0, 0, 0, 0, 1570, 107, 0, 0, 0, 0, 1565, 324, 0, 0, 0, 0, 1564, 411, 0, 0, 0, 0, 1343, 412, 0, 0, 0, 0, 1088, 294, 0, 0, 0, 0, 753, 289, 0, 0, 0, 0, 499, 407, 0, 0, 0, 0, 46, 406, 0, 0, 0, 0, 42, 100)
+}
+point_count = 35
+
+[sub_resource type="Curve2D" id="Curve2D_r8aof"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 42, 325, 0, 0, 0, 0, 134, 322, 0, 0, 0, 0, 242, 322, 0, 0, 0, 0, 382, 330, 0, 0, 0, 0, 551, 325, 0, 0, 0, 0, 705, 256, 0, 0, 0, 0, 842, 204, 0, 0, 0, 0, 1058, 206, 0, 0, 0, 0, 1227, 305, 0, 0, 0, 0, 1315, 350, 0, 0, 0, 0, 1558, 367, 0, 0, 0, 0, 1062, 232, 0, 0, 0, 0, 773, 221, 0, 0, 0, 0, 544, 346, 0, 0, 0, 0, 49, 350, 0, 0, 0, 0, 42, 325)
+}
+point_count = 16
+
+[sub_resource type="Curve2D" id="Curve2D_l001d"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 59, 368, 0, 0, 0, 0, 62, 229, 0, 0, 0, 0, 749, 128, 0, 0, 0, 0, 801, 283, 0, 0, 0, 0, 1034, 283, 0, 0, 0, 0, 1111, 149, 0, 0, 0, 0, 1556, 152, 0, 0, 0, 0, 1110, 176, 0, 0, 0, 0, 1020, 280, 0, 0, 0, 0, 813, 272, 0, 0, 0, 0, 725, 142, 0, 0, 0, 0, 73, 247, 0, 0, 0, 0, 59, 368)
+}
+point_count = 13
+
+[sub_resource type="Curve2D" id="Curve2D_fabtj"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 45, 406, 0, 0, 0, 0, 109, 362, 0, 0, 0, 0, 168, 409, 0, 0, 0, 0, 239, 366, 0, 0, 0, 0, 307, 401, 0, 0, 0, 0, 353, 363, 0, 0, 0, 0, 404, 416, 0, 0, 0, 0, 450, 359, 0, 0, 0, 0, 500, 409, 0, 0, 0, 0, 539, 349, 0, 0, 0, 0, 581, 384, 0, 0, 0, 0, 613, 312, 0, 0, 0, 0, 668, 357, 0, 0, 0, 0, 700, 275, 0, 0, 0, 0, 770, 299, 0, 0, 0, 0, 799, 236, 0, 0, 0, 0, 852, 293, 0, 0, 0, 0, 896, 235, 0, 0, 0, 0, 950, 288, 0, 0, 0, 0, 1006, 228, 0, 0, 0, 0, 1046, 285, 0, 0, 0, 0, 1127, 253, 0, 0, 0, 0, 1151, 330, 0, 0, 0, 0, 1250, 304, 0, 0, 0, 0, 1275, 385, 0, 0, 0, 0, 1332, 332, 0, 0, 0, 0, 1376, 421, 0, 0, 0, 0, 1425, 355, 0, 0, 0, 0, 1467, 411, 0, 0, 0, 0, 1540, 343, 0, 0, 0, 0, 1570, 417, 0, 0, 0, 0, 1523, 411, 0, 0, 0, 0, 1482, 361, 0, 0, 0, 0, 1407, 410, 0, 0, 0, 0, 1375, 354, 0, 0, 0, 0, 1316, 400, 0, 0, 0, 0, 1280, 326, 0, 0, 0, 0, 1207, 358, 0, 0, 0, 0, 1183, 288, 0, 0, 0, 0, 1092, 308, 0, 0, 0, 0, 1061, 241, 0, 0, 0, 0, 988, 303, 0, 0, 0, 0, 935, 236, 0, 0, 0, 0, 888, 295, 0, 0, 0, 0, 833, 244, 0, 0, 0, 0, 807, 289, 0, 0, 0, 0, 758, 259, 0, 0, 0, 0, 714, 322, 0, 0, 0, 0, 653, 297, 0, 0, 0, 0, 610, 372, 0, 0, 0, 0, 572, 333, 0, 0, 0, 0, 533, 402, 0, 0, 0, 0, 498, 354, 0, 0, 0, 0, 436, 411, 0, 0, 0, 0, 399, 360, 0, 0, 0, 0, 352, 417, 0, 0, 0, 0, 295, 366, 0, 0, 0, 0, 226, 415, 0, 0, 0, 0, 177, 359, 0, 0, 0, 0, 121, 412, 0, 0, 0, 0, 73, 365, 0, 0, 0, 0, 45, 406)
+}
+point_count = 62
+
+[sub_resource type="Animation" id="Animation_r8aof"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pausable/BackgroundForest/ParallaxLayer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pausable/BackgroundForest/ParallaxLayer2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pausable/BackgroundForest/ParallaxLayer3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5p57d"]
+resource_name = "level_end"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Pausable/BackgroundForest/ParallaxLayer:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Pausable/BackgroundForest/ParallaxLayer2:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 7.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Pausable/BackgroundForest/ParallaxLayer3:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r8aof"]
+_data = {
+&"RESET": SubResource("Animation_r8aof"),
+&"level_end": SubResource("Animation_5p57d")
+}
+
+[node name="Level_04" unique_id=1106297329 instance=ExtResource("1_vosiq")]
+script = ExtResource("2_fdgl0")
+level_number = 4
+
+[node name="World" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="0" unique_id=1428389400]
+layer_0/tile_data = PackedInt32Array(1179648, 393216, 13, 1179649, 131072, 0, 1179650, 131072, 0, 1179651, 65536, 0, 1179652, 131072, 0, 1179653, 131072, 0, 1179654, 65536, 0, 1179655, 65536, 0, 1179656, 65536, 0, 1179657, 65536, 0, 1179658, 65536, 0, 1179659, 65536, 0, 1179660, 131072, 0, 1179661, 131072, 0, 1179662, 131072, 0, 1179663, 65536, 0, 1179664, 65536, 0, 1179665, 131072, 0, 1179666, 131072, 0, 1179667, 65536, 0, 1179669, 131072, 0, 1179668, 65536, 0, 1179670, 131072, 0, 1179671, 131072, 0, 1179672, 131072, 0, 1179673, 131072, 0, 1179674, 65536, 0, 1179675, 131072, 0, 1179676, 131072, 0, 1179677, 131072, 0, 1179678, 65536, 0, 1179679, 65536, 0, 1179680, 65536, 0, 1179681, 65536, 0, 1179682, 65536, 0, 1179683, 65536, 0, 1179684, 65536, 0, 1179685, 65536, 0, 1179686, 65536, 0, 1179690, 458752, 0, 1179689, 458752, 0, 1179688, 65536, 0, 1179687, 65536, 0, 1179691, 458752, 0, 1179692, 458752, 0, 1179702, 458752, 0, 1179701, 393216, 0, 1179700, 393216, 0, 1179699, 458752, 0, 1179698, 393216, 0, 1179697, 458752, 0, 1179696, 458752, 0, 1179695, 458752, 0, 1179694, 393216, 0, 1179693, 393216, 0, 1179703, 458752, 0, 1179704, 458752, 0, 1179705, 393216, 0, 1179706, 393216, 0, 1179707, 393216, 0, 1179708, 458752, 0, 1179709, 458752, 0, 1179710, 458752, 0, 1179711, 458752, 0, 1179712, 458752, 0, 1179713, 458752, 0, 1179714, 131072, 13, 1114178, 0, 2, 1048642, 0, 2, 983106, 0, 1, 917570, 0, 2, 852034, 0, 1, 786498, 0, 2, 720962, 0, 2, 655426, 0, 2, 589890, 0, 1, 524354, 0, 1, 458818, 0, 2, 393282, 0, 2, 327746, 0, 2, 262210, 0, 1, 196674, 0, 1, 131138, 0, 1, 65602, 0, 2, 66, 131072, 12, 65, 65536, 3, 64, 65536, 3, 63, 65536, 3, 62, 65536, 3, 61, 131072, 3, 60, 65536, 3, 59, 131072, 3, 58, 131072, 3, 57, 65536, 3, 56, 131072, 3, 55, 131072, 3, 54, 65536, 3, 53, 65536, 3, 52, 65536, 3, 51, 0, 14, 50, 131072, 3, 49, 131072, 3, 48, 131072, 3, 47, 65536, 3, 46, 0, 14, 45, 131072, 3, 44, 65536, 3, 43, 65536, 3, 42, 65536, 3, 41, 0, 14, 40, 65536, 3, 39, 131072, 3, 38, 131072, 3, 37, 65536, 3, 36, 131072, 3, 35, 0, 14, 34, 65536, 3, 33, 131072, 3, 32, 131072, 3, 31, 65536, 3, 30, 131072, 3, 29, 65536, 3, 28, 0, 14, 27, 131072, 3, 26, 131072, 3, 25, 65536, 3, 24, 65536, 3, 23, 0, 14, 22, 65536, 3, 21, 131072, 3, 20, 131072, 3, 19, 65536, 3, 18, 65536, 3, 17, 0, 14, 16, 65536, 3, 15, 131072, 3, 14, 65536, 3, 13, 131072, 3, 12, 131072, 3, 11, 65536, 3, 10, 131072, 3, 9, 131072, 3, 8, 0, 14, 7, 65536, 3, 6, 131072, 3, 5, 131072, 3, 4, 131072, 3, 3, 131072, 3, 2, 131072, 3, 1, 131072, 3, 0, 196608, 12, 65536, 196608, 2, 131072, 196608, 2, 196608, 196608, 1, 262144, 196608, 1, 327680, 196608, 1, 393216, 196608, 2, 458752, 196608, 1, 524288, 196608, 2, 589824, 196608, 2, 655360, 196608, 2, 720896, 196608, 1, 786432, 196608, 2, 851968, 196608, 1, 917504, 196608, 2, 983040, 196608, 2, 1048576, 196608, 1, 1114112, 196608, 1, 65571, 393216, 4, 131107, 393216, 4, 196644, 786432, 10, 196645, 786432, 10, 196646, 786432, 10, 196647, 786432, 10, 196648, 786432, 10, 131113, 393216, 4, 65577, 393216, 4, 1114118, 3, 65536, 1048582, 3, 131072, 983046, 3, 196608, 1114125, 3, 65536, 1048589, 3, 131072, 983053, 3, 196608, 786440, 3, 65536, 720904, 3, 196608, 720913, 3, 196608, 786449, 3, 65536, 524316, 3, 65536, 458780, 3, 196608, 720947, 3, 65536, 655411, 3, 196608, 589870, 3, 65536, 524334, 3, 196608, 1114169, 3, 65536, 1048633, 3, 131072, 983097, 3, 196608, 983102, 3, 196608, 1048638, 3, 131072, 1114174, 3, 65536, 720956, 3, 65536, 655420, 3, 196608, 196649, 196608, 3, 196643, 0, 3, 589847, 3, 196608, 655383, 3, 65536, 458787, 3, 65536, 458793, 3, 65536, 458790, 3, 65536, 393254, 3, 131072, 327718, 3, 131072, 262182, 3, 131072, 393251, 3, 131072, 327715, 3, 131072, 262179, 3, 131072, 393257, 3, 131072, 327721, 3, 131072, 262185, 3, 131072)
+layer_1/tile_data = PackedInt32Array(-65534, 3, 0, -65533, 3, 0, 589884, 655361, 805306370, 589875, 655361, 805306370, 458798, 655361, 805306370, 393244, 655361, 805306370, 655377, 655361, 805306370, 655368, 655361, 805306370, 589832, 655361, 4, 524296, 655361, 4, 458760, 655361, 4, 393224, 655361, 4, 327688, 655361, 4, 262152, 655361, 4, 196616, 655361, 4, 131080, 655361, 4, 65544, 655361, 4, 589841, 655361, 4, 524305, 655361, 4, 458769, 655361, 4, 393233, 655361, 4, 327697, 655361, 4, 262161, 655361, 4, 196625, 655361, 4, 131089, 655361, 4, 65553, 655361, 4, 327708, 655361, 4, 262172, 655361, 4, 196636, 655361, 4, 131100, 655361, 4, 65564, 655361, 4, 393262, 655361, 4, 327726, 655361, 4, 262190, 655361, 4, 196654, 655361, 4, 131118, 655361, 4, 65582, 655361, 4, 524339, 655361, 4, 458803, 655361, 4, 393267, 655361, 4, 327731, 655361, 4, 262195, 655361, 4, 196659, 655361, 4, 131123, 655361, 4, 65587, 655361, 4, 524348, 655361, 4, 458812, 655361, 4, 131132, 655361, 4, 65596, 655361, 4, 393276, 655361, 4, 327740, 655361, 4, 262204, 655361, 4, 196668, 655361, 4, 524311, 655361, 805306370, 458775, 655361, 4, 393239, 655361, 4, 327703, 655361, 4, 262167, 655361, 4, 196631, 655361, 4, 131095, 655361, 4, 65559, 655361, 4, 23, 655360, 4)
+
+[node name="Decorations" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="1" unique_id=1852819080]
+layer_0/tile_data = PackedInt32Array(13893676, 1, 0, 13959290, 1, 0, 13893833, 1, 0, 13893834, 1, 0, 14090500, 3, 0, 14090485, 3, 0, 14090475, 3, 0, 14090463, 3, 0, 14090458, 3, 0, 14155984, 3, 0, 14155982, 3, 0, 14090449, 3, 0, 14090438, 3, 0, 14155966, 3, 0, 14155954, 3, 0, 14155953, 3, 0, 14155943, 3, 0, 14090393, 3, 0, 14090392, 3, 0, 14155919, 3, 0, 14155918, 3, 0, 14155907, 3, 0, 14090360, 3, 0, 14090359, 3, 0, 14155895, 3, 0, 14155894, 3, 0, 14155883, 3, 0, 14155882, 3, 0, 14155868, 3, 0, 14090332, 3, 0, 14090331, 3, 0, 14090319, 3, 0, 14155847, 3, 0, 14090302, 3, 0, 14090289, 3, 0, 14090264, 3, 0, 14090256, 3, 0, 13959846, 6, 0, 13828806, 8, 0, 13894407, 8, 0, 13173166, 5, 0, 13238765, 5, 0, 14090638, 3, 0, 14090655, 3, 0, 13894055, 1, 0, 14090669, 3, 0, 14090689, 3, 0, 14090710, 3, 0, 14090729, 3, 0, 14025218, 6, 0, 14090512, 2, 0, 14156060, 2, 0, 14156061, 2, 0, 14156073, 2, 0, 14221662, 2, 0, 14221663, 2, 0, 14156145, 2, 0, 14156155, 2, 0, 14090624, 2, 0, 14090529, 3, 0, 14156085, 3, 0, 14156086, 3, 0, 14090573, 3, 0, 14090593, 3, 0, 14090611, 3, 0)
+
+[node name="Items" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="3" unique_id=1018326497]
+layer_0/tile_data = PackedInt32Array(13500437, 0, 0, 13434901, 0, 0, 13303868, 0, 0, 13566401, 0, 0, 13370117, 0, 0, 13370127, 0, 0, 5964559, 0, 0, 2294287, 0, 0, 2228609, 0, 0, 5308653, 0, 0, 4850278, 0, 0, 5964238, 4, 0)
+
+[node name="PlayerSpawnPoint" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="5" unique_id=1612886382]
+position = Vector2(177, 384)
+
+[node name="LevelExitPoint" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="6" unique_id=1276048459]
+position = Vector2(920, 50)
+
+[node name="EnemyRoot" type="Node" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="9" unique_id=825031833]
+
+[node name="OrbRoot" type="Node2D" parent="Pausable/EnemyRoot" index="0" unique_id=1983679467]
+
+[node name="Path2D" type="Path2D" parent="Pausable/EnemyRoot" index="1" unique_id=181028355]
+curve = SubResource("Curve2D_5p57d")
+
+[node name="EnemiesSpawnPathFollow" type="PathFollow2D" parent="Pausable/EnemyRoot/Path2D" index="0" unique_id=168937928]
+position = Vector2(42, 100)
+rotation = -0.033320993
+
+[node name="FlyingEyePath1" type="Path2D" parent="Pausable/EnemyRoot" index="2" unique_id=1827637794]
+curve = SubResource("Curve2D_r8aof")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Pausable/EnemyRoot/FlyingEyePath1" index="0" unique_id=97198388]
+position = Vector2(42, 325)
+rotation = -0.032597143
+
+[node name="FlyingEyePath2" type="Path2D" parent="Pausable/EnemyRoot" index="3" unique_id=1675356016]
+curve = SubResource("Curve2D_l001d")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Pausable/EnemyRoot/FlyingEyePath2" index="0" unique_id=1001962289]
+position = Vector2(59, 368)
+rotation = -1.549217
+
+[node name="FlyingEyePath3" type="Path2D" parent="Pausable/EnemyRoot" index="4" unique_id=1332812797]
+curve = SubResource("Curve2D_fabtj")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Pausable/EnemyRoot/FlyingEyePath3" index="0" unique_id=198719123]
+position = Vector2(45, 406)
+rotation = -0.60228735
+
+[node name="EnemiesSpawnerTimer" type="Timer" parent="Pausable/EnemyRoot" index="5" unique_id=1534315593]
+wait_time = 10.0
+autostart = true
+
+[node name="BustTimer" type="Timer" parent="Pausable/EnemyRoot/EnemiesSpawnerTimer" index="0" unique_id=728016105]
+wait_time = 15.0
+autostart = true
+
+[node name="DialogMenu" parent="WhenPaused" parent_id_path=PackedInt32Array(1020198057) index="1" unique_id=1505179416]
+textures = Array[Texture2D]([ExtResource("3_5p57d"), ExtResource("4_r8aof")])
+DIALOG_TEXT_PATH = "res://resourses/text_files/level_04/dialog_text.txt"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2" unique_id=1607220770]
+libraries/ = SubResource("AnimationLibrary_r8aof")
+
+[connection signal="body_entered" from="Pausable/World/LaderBottom" to="Pausable/World/LaderBottom" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/LaderBottom" to="Pausable/World/LaderBottom" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/LaderMiddle" to="Pausable/World/LaderMiddle" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/LaderMiddle" to="Pausable/World/LaderMiddle" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/LaderTop" to="Pausable/World/LaderTop" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/LaderTop" to="Pausable/World/LaderTop" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115343" to="Pausable/World/@Area2D@115343" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115343" to="Pausable/World/@Area2D@115343" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115344" to="Pausable/World/@Area2D@115344" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115344" to="Pausable/World/@Area2D@115344" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115345" to="Pausable/World/@Area2D@115345" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115345" to="Pausable/World/@Area2D@115345" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115346" to="Pausable/World/@Area2D@115346" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115346" to="Pausable/World/@Area2D@115346" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115347" to="Pausable/World/@Area2D@115347" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115347" to="Pausable/World/@Area2D@115347" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115348" to="Pausable/World/@Area2D@115348" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115348" to="Pausable/World/@Area2D@115348" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115349" to="Pausable/World/@Area2D@115349" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115349" to="Pausable/World/@Area2D@115349" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115350" to="Pausable/World/@Area2D@115350" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115350" to="Pausable/World/@Area2D@115350" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115351" to="Pausable/World/@Area2D@115351" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115351" to="Pausable/World/@Area2D@115351" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115352" to="Pausable/World/@Area2D@115352" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115352" to="Pausable/World/@Area2D@115352" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115353" to="Pausable/World/@Area2D@115353" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115353" to="Pausable/World/@Area2D@115353" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115354" to="Pausable/World/@Area2D@115354" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115354" to="Pausable/World/@Area2D@115354" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115355" to="Pausable/World/@Area2D@115355" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115355" to="Pausable/World/@Area2D@115355" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115356" to="Pausable/World/@Area2D@115356" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115356" to="Pausable/World/@Area2D@115356" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115357" to="Pausable/World/@Area2D@115357" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115357" to="Pausable/World/@Area2D@115357" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115358" to="Pausable/World/@Area2D@115358" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115358" to="Pausable/World/@Area2D@115358" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115359" to="Pausable/World/@Area2D@115359" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115359" to="Pausable/World/@Area2D@115359" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115360" to="Pausable/World/@Area2D@115360" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115360" to="Pausable/World/@Area2D@115360" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115361" to="Pausable/World/@Area2D@115361" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115361" to="Pausable/World/@Area2D@115361" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115362" to="Pausable/World/@Area2D@115362" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115362" to="Pausable/World/@Area2D@115362" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115363" to="Pausable/World/@Area2D@115363" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115363" to="Pausable/World/@Area2D@115363" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115364" to="Pausable/World/@Area2D@115364" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115364" to="Pausable/World/@Area2D@115364" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115365" to="Pausable/World/@Area2D@115365" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115365" to="Pausable/World/@Area2D@115365" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115366" to="Pausable/World/@Area2D@115366" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115366" to="Pausable/World/@Area2D@115366" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115367" to="Pausable/World/@Area2D@115367" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115367" to="Pausable/World/@Area2D@115367" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115368" to="Pausable/World/@Area2D@115368" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115368" to="Pausable/World/@Area2D@115368" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115369" to="Pausable/World/@Area2D@115369" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115369" to="Pausable/World/@Area2D@115369" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115370" to="Pausable/World/@Area2D@115370" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115370" to="Pausable/World/@Area2D@115370" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115371" to="Pausable/World/@Area2D@115371" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115371" to="Pausable/World/@Area2D@115371" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115372" to="Pausable/World/@Area2D@115372" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115372" to="Pausable/World/@Area2D@115372" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115373" to="Pausable/World/@Area2D@115373" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115373" to="Pausable/World/@Area2D@115373" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115374" to="Pausable/World/@Area2D@115374" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115374" to="Pausable/World/@Area2D@115374" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115375" to="Pausable/World/@Area2D@115375" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115375" to="Pausable/World/@Area2D@115375" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115376" to="Pausable/World/@Area2D@115376" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115376" to="Pausable/World/@Area2D@115376" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@115377" to="Pausable/World/@Area2D@115377" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@115377" to="Pausable/World/@Area2D@115377" method="_on_body_exited"]
+[connection signal="timeout" from="Pausable/EnemyRoot/EnemiesSpawnerTimer" to="." method="_on_enemies_spawner_timer_timeout"]
+[connection signal="timeout" from="Pausable/EnemyRoot/EnemiesSpawnerTimer/BustTimer" to="." method="_on_bust_timer_timeout"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

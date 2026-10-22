@@ -1,0 +1,23 @@
+[gd_resource type="Theme" format=3 uid="uid://b6dwdqsb6rioo"]
+
+[ext_resource type="StyleBox" uid="uid://c6o5c1vyn4l6u" path="res://resourses/styles/style_clickable_hover.tres" id="1_4sftr"]
+[ext_resource type="StyleBox" uid="uid://cpwxx6owmlu6b" path="res://resourses/styles/style_clickable_disabled.tres" id="1_7fa7m"]
+[ext_resource type="StyleBox" uid="uid://c0clsbcfx64ld" path="res://resourses/styles/style_clickable_normal.tres" id="2_5m754"]
+[ext_resource type="StyleBox" uid="uid://b7cvnxtjpppl5" path="res://resourses/styles/style_clickable_pressed.tres" id="3_7fa7m"]
+[ext_resource type="StyleBox" uid="uid://d4mf4cgfxqpkf" path="res://resourses/styles/style_label.tres" id="4_b8uda"]
+[ext_resource type="StyleBox" uid="uid://dkot7g6lntlnj" path="res://resourses/styles/style_panel.tres" id="5_5m754"]
+
+[resource]
+Button/constants/outline_size = 10
+Button/font_sizes/font_size = 32
+Button/styles/disabled = ExtResource("1_7fa7m")
+Button/styles/hover = ExtResource("1_4sftr")
+Button/styles/hover_pressed = ExtResource("3_7fa7m")
+Button/styles/normal = ExtResource("2_5m754")
+Button/styles/pressed = ExtResource("3_7fa7m")
+Label/constants/outline_size = 30
+Label/font_sizes/font_size = 72
+Label/styles/normal = ExtResource("4_b8uda")
+PanelContainer/styles/panel = ExtResource("5_5m754")
+RichTextLabel/constants/outline_size = 10
+RichTextLabel/font_sizes/normal_font_size = 24

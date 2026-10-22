@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cbd4piptswhhm"]
+
+[ext_resource type="PackedScene" uid="uid://bx2ye3oyktdcf" path="res://levels/destroyed_structure/destroyed_structure_base.tscn" id="1_aeqyy"]
+[ext_resource type="Texture2D" uid="uid://d1ali7trebaty" path="res://resourses/texture_res/destroyed_structure_top.tres" id="2_2ktre"]
+
+[node name="DestroyedStructureTop" unique_id=789140604 instance=ExtResource("1_aeqyy")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=892317529]
+texture = ExtResource("2_2ktre")

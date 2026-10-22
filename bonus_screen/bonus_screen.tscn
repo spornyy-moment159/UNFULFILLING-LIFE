@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://cgi15yumo3mxc"]
+
+[ext_resource type="Script" uid="uid://cltfexbluick" path="res://bonus_screen/bonus_screen.gd" id="1_o8wcj"]
+[ext_resource type="Script" uid="uid://bmo2jobujrd1q" path="res://menu/background_forest.gd" id="2_yegds"]
+[ext_resource type="Texture2D" uid="uid://dg1ukqbb7inlj" path="res://assets/background/background_layer_1.png" id="3_n1w2f"]
+[ext_resource type="Theme" uid="uid://b6dwdqsb6rioo" path="res://resourses/styles/style.tres" id="4_n013s"]
+
+[node name="BonusScreen" type="CanvasLayer" unique_id=1673638997]
+script = ExtResource("1_o8wcj")
+
+[node name="BackgroundForest" type="ParallaxBackground" parent="." unique_id=64851527]
+script = ExtResource("2_yegds")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BackgroundForest" unique_id=384764492]
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer" unique_id=1769909180]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("3_n1w2f")
+centered = false
+
+[node name="Control" type="Control" parent="." unique_id=822075806]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=587397419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer" unique_id=664074466]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainer" unique_id=691935692]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="Control/VBoxContainer/MarginContainer/HBoxContainer" unique_id=98306638]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+theme = ExtResource("4_n013s")
+text = "Назад"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control/VBoxContainer" unique_id=67535518]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Control/VBoxContainer/MarginContainer2" unique_id=89809949]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="Control/VBoxContainer/MarginContainer2/ScrollContainer" unique_id=400689660]
+layout_mode = 2
+theme_override_constants/h_separation = 25
+theme_override_constants/v_separation = 25
+columns = 3
+
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainer/HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]

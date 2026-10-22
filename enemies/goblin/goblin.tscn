@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://bdachvogejbps"]
+
+[ext_resource type="PackedScene" uid="uid://cx1okruer1nj0" path="res://enemies/enemy_grounded_base.tscn" id="1_yx8al"]
+[ext_resource type="Script" uid="uid://berosp3vkfnua" path="res://enemies/goblin/goblin.gd" id="2_r03s4"]
+[ext_resource type="Texture2D" uid="uid://c2isjup2dg0q" path="res://assets/monsters/Goblin/Attack.png" id="3_yxi8i"]
+[ext_resource type="AnimationLibrary" uid="uid://wlxd2h62q2qv" path="res://enemies/goblin/goblin.res" id="4_yxi8i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r03s4"]
+size = Vector2(23, 37)
+
+[sub_resource type="Animation" id="Animation_yxi8i"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5cujc"]
+_data = {
+&"RESET": SubResource("Animation_yxi8i")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqqj1"]
+size = Vector2(83, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxi8i"]
+size = Vector2(43, 26)
+
+[node name="Goblin" unique_id=621383916 instance=ExtResource("1_yx8al")]
+scale = Vector2(0.6, 0.6)
+script = ExtResource("2_r03s4")
+
+[node name="Sprite2D" parent="." index="0" unique_id=803890039]
+position = Vector2(0, -25.99)
+texture = ExtResource("3_yxi8i")
+hframes = 8
+frame = 7
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=587325446]
+position = Vector2(0, -18.5)
+shape = SubResource("RectangleShape2D_r03s4")
+
+[node name="AnimationPlayer" parent="." index="2" unique_id=1101858851]
+libraries/ = SubResource("AnimationLibrary_5cujc")
+libraries/goblin = ExtResource("4_yxi8i")
+
+[node name="AttackArea" parent="AttackRoot" parent_id_path=PackedInt32Array(1401376833) index="1" unique_id=940067768]
+position = Vector2(1.6666663, -19.999996)
+rotation = 0.38397244
+
+[node name="CollisionShape2D" parent="AttackRoot/AttackArea" index="0" unique_id=395890215]
+shape = SubResource("RectangleShape2D_nqqj1")
+
+[node name="AttackRange" parent="AttackRoot" parent_id_path=PackedInt32Array(1401376833) index="2" unique_id=2074233483]
+position = Vector2(21.666666, -16.666666)
+
+[node name="CollisionShape2D" parent="AttackRoot/AttackRange" index="0" unique_id=771665647]
+shape = SubResource("RectangleShape2D_yxi8i")

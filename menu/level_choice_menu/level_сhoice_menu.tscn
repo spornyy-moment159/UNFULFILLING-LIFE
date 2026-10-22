@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://bcj0802l7n5jp"]
+
+[ext_resource type="Script" uid="uid://bqnpmr8pnxbxv" path="res://menu/level_choice_menu/level_сhoice_menu.gd" id="1_cq5jl"]
+[ext_resource type="Script" uid="uid://bmo2jobujrd1q" path="res://menu/background_forest.gd" id="2_0ine1"]
+[ext_resource type="Texture2D" uid="uid://dg1ukqbb7inlj" path="res://assets/background/background_layer_1.png" id="3_d4npg"]
+[ext_resource type="Texture2D" uid="uid://dquukkntmjhkq" path="res://assets/background/background_layer_2.png" id="4_lcexr"]
+[ext_resource type="Texture2D" uid="uid://bearauuxqnbv6" path="res://assets/background/background_layer_3.png" id="5_nuu7q"]
+[ext_resource type="Theme" uid="uid://b6dwdqsb6rioo" path="res://resourses/styles/style.tres" id="6_lgf0i"]
+
+[node name="LevelСhoiceMenu" type="CanvasLayer" unique_id=1673638997]
+script = ExtResource("1_cq5jl")
+
+[node name="BackgroundForest" type="ParallaxBackground" parent="." unique_id=64851527]
+scroll_ignore_camera_zoom = true
+script = ExtResource("2_0ine1")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BackgroundForest" unique_id=384764492]
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer" unique_id=1769909180]
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("3_d4npg")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="BackgroundForest" unique_id=1839283447]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer2" unique_id=1080898498]
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("4_lcexr")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="BackgroundForest" unique_id=1255542346]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer3" unique_id=1501146184]
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("5_nuu7q")
+centered = false
+
+[node name="Control" type="Control" parent="." unique_id=822075806]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=587397419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer" unique_id=664074466]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="BackButton" type="Button" parent="Control/VBoxContainer/MarginContainer" unique_id=98306638]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme = ExtResource("6_lgf0i")
+text = "Назад"
+
+[node name="ResetProgressButton" type="Button" parent="Control/VBoxContainer/MarginContainer" unique_id=1398829445]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme = ExtResource("6_lgf0i")
+text = "Сбросить прогресс"
+
+[node name="RootNodeForFilling" type="Control" parent="Control/VBoxContainer" unique_id=141204037]
+layout_mode = 2
+size_flags_vertical = 3
+
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainer/ResetProgressButton" to="." method="_on_reset_progress_button_pressed"]

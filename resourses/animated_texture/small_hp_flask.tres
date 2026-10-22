@@ -1,0 +1,17 @@
+[gd_resource type="AnimatedTexture" format=3 uid="uid://cxnl11unttlb4"]
+
+[ext_resource type="Texture2D" uid="uid://bxgg476tiblwt" path="res://assets/flasks/flasks_1_1.png" id="1_3l64w"]
+[ext_resource type="Texture2D" uid="uid://ca1yaqu7dycd4" path="res://assets/flasks/flasks_1_2.png" id="2_6s2sq"]
+[ext_resource type="Texture2D" uid="uid://cnsq4ftat2ayy" path="res://assets/flasks/flasks_1_3.png" id="3_o17ce"]
+[ext_resource type="Texture2D" uid="uid://dm3uw76c3dpby" path="res://assets/flasks/flasks_1_4.png" id="4_juoej"]
+
+[resource]
+frames = 4
+speed_scale = 6.0
+frame_0/texture = ExtResource("1_3l64w")
+frame_1/texture = ExtResource("2_6s2sq")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_o17ce")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_juoej")
+frame_3/duration = 1.0

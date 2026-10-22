@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cvllh3aghsx35"]
+
+[ext_resource type="Theme" uid="uid://c4lmege16dhqe" path="res://resourses/styles/style_alt.tres" id="1_csfll"]
+
+[node name="LevelPanelUnactive" type="PanelContainer" unique_id=2085026495]
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_csfll")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=644212696]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Title" type="Label" parent="MarginContainer" unique_id=1077993271]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_csfll")
+text = "Уровень закрыт"
+horizontal_alignment = 1
+max_lines_visible = 1

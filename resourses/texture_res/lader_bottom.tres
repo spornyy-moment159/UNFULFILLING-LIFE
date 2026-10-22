@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://dbwbvlrmh6dyj"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1gdjl"]
+load_path = "res://.godot/imported/oak_woods_tileset.png-ef307a4b80b7b2c790d963774fd87030.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_1gdjl")
+region = Rect2(144, 120, 24, 24)

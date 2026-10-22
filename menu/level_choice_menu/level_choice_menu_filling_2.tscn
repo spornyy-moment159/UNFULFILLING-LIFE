@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d1q3nf1t2u0lr"]
+
+[ext_resource type="Script" uid="uid://dsg8pm17l7jjr" path="res://menu/level_choice_menu/level_choice_menu_filling_2.gd" id="1_a2st0"]
+
+[node name="LevelChoiceMenuFilling2" type="MarginContainer" unique_id=1128531604]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_a2st0")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1382444547]
+layout_mode = 2
+
+[node name="LevelPanelContainer" type="HBoxContainer" parent="ScrollContainer" unique_id=1408650596]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 50
+alignment = 1

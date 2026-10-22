@@ -1,0 +1,129 @@
+[gd_scene format=3 uid="uid://dbveu1dcf5ejr"]
+
+[ext_resource type="Script" uid="uid://d11swkn4tm51k" path="res://player/hud/hud.gd" id="1_qtddk"]
+[ext_resource type="Texture2D" uid="uid://wydyma0jpxkq" path="res://assets/live.png" id="1_vhn6v"]
+[ext_resource type="Theme" uid="uid://c4lmege16dhqe" path="res://resourses/styles/style_alt.tres" id="2_5rf3r"]
+[ext_resource type="Texture2D" uid="uid://dxsarjyv0b4u6" path="res://assets/coin/coin_1.png" id="2_ifci6"]
+
+[node name="HUD" type="CanvasLayer" unique_id=333963107]
+script = ExtResource("1_qtddk")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1811149549]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=897530083]
+layout_mode = 2
+size_flags_vertical = 0
+alignment = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer" unique_id=843354917]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture = ExtResource("2_ifci6")
+expand_mode = 1
+
+[node name="CoinCounter" type="Label" parent="MarginContainer/HBoxContainer" unique_id=744205290]
+layout_mode = 2
+size_flags_horizontal = 2
+theme = ExtResource("2_5rf3r")
+text = "0/1"
+
+[node name="HPCounter" type="HBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=31095820]
+layout_mode = 2
+size_flags_vertical = 0
+alignment = 2
+
+[node name="L1" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=858660417]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L2" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1550677747]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L3" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=631423729]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L4" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1593757427]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L5" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1173930883]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L6" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1705883161]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L7" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=620794624]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L8" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=360485307]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L9" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1883424964]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L10" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1729329281]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1
+
+[node name="L11" type="TextureRect" parent="MarginContainer/HBoxContainer/HPCounter" unique_id=1872000760]
+visible = false
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 8
+texture = ExtResource("1_vhn6v")
+expand_mode = 1

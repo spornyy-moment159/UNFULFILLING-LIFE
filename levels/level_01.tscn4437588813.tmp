@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dcgntvt1y0umi"]
+
+[ext_resource type="PackedScene" uid="uid://dur20smb6jsgr" path="res://levels/level_base.tscn" id="1_ty3hu"]
+[ext_resource type="Script" uid="uid://vtgno5ifgaho" path="res://levels/level_01.gd" id="2_mckh2"]
+[ext_resource type="PackedScene" uid="uid://b18o8sr4haem4" path="res://levels/check_point/check_point.tscn" id="3_81a5f"]
+
+[node name="Level_01" unique_id=1106297329 instance=ExtResource("1_ty3hu")]
+script = ExtResource("2_mckh2")
+level_id = 1
+
+[node name="World" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="0" unique_id=1428389400]
+layer_0/tile_data = PackedInt32Array(1179648, 65536, 1, 1179649, 65536, 1, 1179650, 65536, 1, 1179651, 65536, 1, 1179652, 65536, 1, 1179653, 65536, 1, 1179654, 65536, 1, 1179655, 65536, 1, 1114112, 65536, 1, 1048576, 65536, 1, 1179656, 65536, 1, 1179657, 65536, 1, 1179658, 65536, 1, 1179659, 65536, 1, 1179660, 65536, 1, 1179661, 65536, 1, 1179662, 65536, 1, 1179663, 65536, 1, 1179664, 65536, 1, 1179665, 65536, 1, 1179666, 65536, 1, 1179667, 65536, 1, 1179668, 65536, 1, 1179669, 65536, 1, 1179670, 65536, 1, 1179671, 65536, 1, 1179672, 65536, 1, 1179673, 65536, 1, 1179674, 65536, 1, 1179675, 65536, 1, 1179676, 65536, 1, 983040, 65536, 1, 917504, 65536, 1, 851968, 65536, 1, 786432, 65536, 1, 720896, 65536, 1, 655360, 65536, 1, 589824, 65536, 1, 524288, 65536, 1, 458752, 65536, 1, 393216, 65536, 1, 327680, 65536, 1, 262144, 65536, 1, 196608, 65536, 1, 131072, 65536, 1, 65536, 65536, 1, 0, 65536, 1, 786452, 65536, 1, 786449, 65536, 1, 786442, 65536, 1, 786433, 65536, 1, 1048597, 65536, 1, 917527, 65536, 1, 720897, 3, 65536, 655361, 3, 131072, 589825, 3, 131072, 524289, 3, 131072, 458753, 3, 196608, 458754, 65536, 1, 458755, 65536, 1, 458756, 65536, 1, 458757, 65536, 1, 458758, 65536, 1, 458759, 65536, 1, 458760, 65536, 1, 458761, 65536, 1, 327692, 3, 196608, 327696, 3, 196608, 327700, 3, 196608, 327704, 3, 196608, 327708, 3, 196608, 458782, 65536, 1, 458783, 65536, 1, 458784, 65536, 1, 458785, 65536, 1, 458786, 65536, 1, 458787, 65536, 1, 1179677, 65536, 1, 458781, 65536, 1, 1179678, 65536, 1, 1179679, 65536, 1, 1179680, 65536, 1, 1179681, 65536, 1, 1179682, 65536, 1, 1179683, 65536, 1, 1179684, 65536, 1, 1179685, 65536, 1, 1179686, 65536, 1, 1179687, 65536, 1, 1179688, 65536, 1, 1179689, 65536, 1, 917545, 65536, 1, 852009, 65536, 1, 786473, 65536, 1, 720937, 65536, 1, 655401, 65536, 1, 589865, 65536, 1, 524329, 65536, 1, 458793, 65536, 1, 458792, 65536, 1, 458791, 65536, 1, 458790, 65536, 1, 458789, 65536, 1, 458788, 65536, 1, 852007, 3, 131072, 655399, 3, 131072, 524325, 3, 131072, 720930, 65536, 1, 720929, 65536, 1, 720928, 65536, 1, 917538, 3, 131072, 524317, 65536, 1, 589853, 65536, 1, 655389, 65536, 1, 720925, 65536, 1, 983081, 65536, 1, 786475, 65536, 1, 720939, 65536, 1, 655403, 65536, 1, 589867, 65536, 1, 524331, 65536, 1, 458795, 65536, 1, 393259, 65536, 1, 327723, 65536, 1, 262187, 65536, 1, 196651, 65536, 1, 131115, 65536, 1, 65579, 65536, 1, 43, 65536, 1, -65536, 65536, 1, -65535, 65536, 1, -65534, 65536, 1, -65533, 65536, 1, -65532, 65536, 1, -65531, 65536, 1, -65530, 65536, 1, -65529, 65536, 1, -65528, 65536, 1, -65527, 65536, 1, -65526, 65536, 1, -65525, 65536, 1, -65524, 65536, 1, -65523, 65536, 1, -65522, 65536, 1, -65521, 65536, 1, -65520, 65536, 1, -65519, 65536, 1, -65518, 65536, 1, -65517, 65536, 1, -65516, 65536, 1, -65515, 65536, 1, -65514, 65536, 1, -65513, 65536, 1, -65512, 65536, 1, -65511, 65536, 1, -65510, 65536, 1, -65509, 65536, 1, -65508, 65536, 1, -65507, 65536, 1, -65506, 65536, 1, -65505, 65536, 1, -65504, 65536, 1, -65503, 65536, 1, -65502, 65536, 1, -65501, 65536, 1, -65500, 65536, 1, -65499, 65536, 1, -65498, 65536, 1, -65497, 65536, 1, -65496, 65536, 1, -65495, 65536, 1, -65494, 65536, 1, -65493, 65536, 1, 983082, 65536, 1, 983083, 65536, 1, 983084, 65536, 1, 983085, 65536, 1, 852015, 65536, 1, 786476, 65536, 1, 655411, 65536, 1, 1179690, 65536, 1, 1179691, 65536, 1, 1179692, 65536, 1, 1179693, 65536, 1, 1179694, 65536, 1, 1179695, 65536, 1, 1179696, 65536, 1, 1179697, 65536, 1, 1179698, 65536, 1, 1179699, 65536, 1, 1179700, 65536, 1, 1179701, 65536, 1, 1179702, 65536, 1, 1179703, 65536, 1, 1179704, 65536, 1, 1179705, 65536, 1, 1179706, 65536, 1, 1179707, 65536, 1, 1179708, 65536, 1, 1179709, 65536, 1, 1179710, 65536, 1, 1179711, 65536, 1, 1179712, 65536, 1, 1179713, 65536, 1, 1179714, 65536, 1, 458796, 3, 131072, 393260, 3, 131072, 327724, 3, 196608, 327731, 65536, 1, 327732, 65536, 1, 327733, 65536, 1, 327734, 65536, 1, 327735, 65536, 1, 327736, 65536, 1, 327737, 65536, 1, 655418, 65536, 1, 720959, 3, 131072, 786495, 3, 131072, 852031, 3, 131072, 327738, 65536, 1, 327739, 65536, 1, 327740, 65536, 1, 327741, 65536, 1, 327742, 65536, 1, 327743, 65536, 1, 327744, 65536, 1, 327745, 65536, 1, 327746, 65536, 1, 393282, 65536, 1, 458818, 65536, 1, 524354, 65536, 1, 589890, 65536, 1, 655426, 65536, 1, 720962, 65536, 1, 786498, 65536, 1, 852034, 65536, 1, 917570, 65536, 1, 983106, 65536, 1, 1048642, 65536, 1, 1114178, 65536, 1, -65492, 65536, 1, -65491, 65536, 1, -65490, 65536, 1, -65489, 65536, 1, -65488, 65536, 1, -65487, 65536, 1, -65486, 65536, 1, -65485, 65536, 1, -65484, 65536, 1, -65483, 65536, 1, -65482, 65536, 1, -65481, 65536, 1, -65480, 65536, 1, -65479, 65536, 1, -65478, 65536, 1, -65477, 65536, 1, -65476, 65536, 1, -65475, 65536, 1, -65474, 65536, 1, -65473, 65536, 1, -65472, 65536, 1, -65471, 65536, 1, -65470, 65536, 1, 66, 65536, 1, 65602, 65536, 1, 131138, 65536, 1, 196674, 65536, 1, 262210, 65536, 1, 655423, 3, 131072)
+
+[node name="Items" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="3" unique_id=1018326497]
+layer_0/tile_data = PackedInt32Array(13303827, 4, 0, 8847486, 4, 0, 8716536, 4, 0, 7471172, 4, 0, 1573012, 4, 0, 1507572, 4, 0, 1638740, 4, 0, 7930256, 4, 0, 7995779, 4, 0, 8454752, 4, 0, 8716797, 4, 0, 4981221, 4, 0, 5112279, 4, 0, 5046771, 4, 0, 4850156, 4, 0, 4981214, 4, 0, 10486520, 4, 0, 9503482, 4, 0, 8454907, 4, 0, 5899024, 4, 0)
+
+[node name="HUD" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="4" unique_id=333963107]
+hp_is_showed = false
+
+[node name="PlayerSpawnPoint" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="5" unique_id=1612886382]
+position = Vector2(84, 403)
+
+[node name="LevelExitPoint" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="6" unique_id=1276048459]
+position = Vector2(1552, 86)
+
+[node name="CheckPoint" parent="Pausable/CheckPointsRootNode" parent_id_path=PackedInt32Array(348980325) index="0" unique_id=168929097 instance=ExtResource("3_81a5f")]
+position = Vector2(1072, 338)
+
+[connection signal="body_entered" from="Pausable/World/@Area2D@107648" to="Pausable/World/@Area2D@107648" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107648" to="Pausable/World/@Area2D@107648" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107649" to="Pausable/World/@Area2D@107649" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107649" to="Pausable/World/@Area2D@107649" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107650" to="Pausable/World/@Area2D@107650" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107650" to="Pausable/World/@Area2D@107650" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107651" to="Pausable/World/@Area2D@107651" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107651" to="Pausable/World/@Area2D@107651" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107652" to="Pausable/World/@Area2D@107652" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107652" to="Pausable/World/@Area2D@107652" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107653" to="Pausable/World/@Area2D@107653" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107653" to="Pausable/World/@Area2D@107653" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107654" to="Pausable/World/@Area2D@107654" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107654" to="Pausable/World/@Area2D@107654" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107655" to="Pausable/World/@Area2D@107655" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107655" to="Pausable/World/@Area2D@107655" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107656" to="Pausable/World/@Area2D@107656" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107656" to="Pausable/World/@Area2D@107656" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107657" to="Pausable/World/@Area2D@107657" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107657" to="Pausable/World/@Area2D@107657" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107658" to="Pausable/World/@Area2D@107658" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107658" to="Pausable/World/@Area2D@107658" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107659" to="Pausable/World/@Area2D@107659" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107659" to="Pausable/World/@Area2D@107659" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107660" to="Pausable/World/@Area2D@107660" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107660" to="Pausable/World/@Area2D@107660" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107661" to="Pausable/World/@Area2D@107661" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107661" to="Pausable/World/@Area2D@107661" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107662" to="Pausable/World/@Area2D@107662" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107662" to="Pausable/World/@Area2D@107662" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107663" to="Pausable/World/@Area2D@107663" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107663" to="Pausable/World/@Area2D@107663" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107664" to="Pausable/World/@Area2D@107664" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107664" to="Pausable/World/@Area2D@107664" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107665" to="Pausable/World/@Area2D@107665" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107665" to="Pausable/World/@Area2D@107665" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107666" to="Pausable/World/@Area2D@107666" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107666" to="Pausable/World/@Area2D@107666" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107667" to="Pausable/World/@Area2D@107667" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107667" to="Pausable/World/@Area2D@107667" method="_on_body_exited"]
+[connection signal="body_entered" from="Pausable/World/@Area2D@107668" to="Pausable/World/@Area2D@107668" method="_on_body_entered"]
+[connection signal="body_exited" from="Pausable/World/@Area2D@107668" to="Pausable/World/@Area2D@107668" method="_on_body_exited"]

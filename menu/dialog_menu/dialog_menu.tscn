@@ -1,0 +1,96 @@
+[gd_scene format=3 uid="uid://dobguml5yxdt0"]
+
+[ext_resource type="Script" uid="uid://r2ho4lmq1uc6" path="res://menu/dialog_menu/dialog_menu.gd" id="1_0nr2c"]
+[ext_resource type="Theme" uid="uid://b6dwdqsb6rioo" path="res://resourses/styles/style.tres" id="1_vs8if"]
+[ext_resource type="Theme" uid="uid://c4lmege16dhqe" path="res://resourses/styles/style_alt.tres" id="3_1726l"]
+[ext_resource type="StyleBox" uid="uid://dkot7g6lntlnj" path="res://resourses/styles/style_panel.tres" id="3_pv431"]
+
+[sub_resource type="InputEventKey" id="InputEventKey_gia0r"]
+device = -1
+keycode = 32
+unicode = 32
+
+[sub_resource type="Shortcut" id="Shortcut_l001d"]
+events = [SubResource("InputEventKey_gia0r")]
+
+[node name="DialogMenu" type="CanvasLayer" unique_id=1505179416]
+layer = 2
+script = ExtResource("1_0nr2c")
+textures = Array[Texture2D]([null, null, null, null])
+
+[node name="Control" type="Control" parent="." unique_id=556027763]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=2013584538]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/MarginContainer" unique_id=1662797159]
+layout_mode = 2
+theme = ExtResource("1_vs8if")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer/PanelContainer" unique_id=402693992]
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/MarginContainer/PanelContainer/VBoxContainer" unique_id=1065823286]
+layout_mode = 2
+
+[node name="Person1" type="PanelContainer" parent="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer" unique_id=401196143]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_styles/panel = ExtResource("3_pv431")
+
+[node name="Person1Texture" type="TextureRect" parent="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer/Person1" unique_id=258977181]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 8
+expand_mode = 1
+
+[node name="Person2" type="PanelContainer" parent="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer" unique_id=463408576]
+layout_mode = 2
+
+[node name="Person2Texture" type="TextureRect" parent="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer/Person2" unique_id=262904801]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_horizontal = 8
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/MarginContainer/PanelContainer/VBoxContainer" unique_id=1713223563]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("3_1726l")
+theme_override_font_sizes/normal_font_size = 32
+text = "dawdawdawdwadwad"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Control/MarginContainer/PanelContainer/VBoxContainer" unique_id=2133971573]
+layout_mode = 2
+
+[node name="NextButton" type="Button" parent="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=1036739337]
+layout_mode = 2
+size_flags_horizontal = 2
+shortcut = SubResource("Shortcut_l001d")
+shortcut_in_tooltip = false
+text = "Далее"
+
+[node name="BonusButton" type="Button" parent="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer2" unique_id=379909561]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 8
+text = "Отдать все собранные монеты"
+
+[connection signal="pressed" from="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer2/NextButton" to="." method="_on_next_button_pressed"]
+[connection signal="pressed" from="Control/MarginContainer/PanelContainer/VBoxContainer/HBoxContainer2/BonusButton" to="." method="_on_bonus_button_pressed"]

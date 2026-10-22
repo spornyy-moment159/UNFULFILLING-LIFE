@@ -1,0 +1,194 @@
+[gd_scene format=3 uid="uid://d3bj38s1tapie"]
+
+[ext_resource type="Script" uid="uid://bmo2jobujrd1q" path="res://menu/background_forest.gd" id="1_4ptff"]
+[ext_resource type="Script" uid="uid://bmq876vjj3w4j" path="res://description/description_screen.gd" id="1_r61v2"]
+[ext_resource type="Texture2D" uid="uid://dg1ukqbb7inlj" path="res://assets/background/background_layer_1.png" id="2_r61v2"]
+[ext_resource type="Texture2D" uid="uid://dquukkntmjhkq" path="res://assets/background/background_layer_2.png" id="3_3smth"]
+[ext_resource type="Texture2D" uid="uid://bearauuxqnbv6" path="res://assets/background/background_layer_3.png" id="4_u6cnw"]
+[ext_resource type="Theme" uid="uid://b6dwdqsb6rioo" path="res://resourses/styles/style.tres" id="5_mahj2"]
+[ext_resource type="Texture2D" uid="uid://nukkbaj5b5gi" path="res://assets/transition.jpg" id="7_3smth"]
+
+[sub_resource type="Animation" id="Animation_3smth"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer2/CenterContainer/TextureRect:custom_minimum_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(300, 300)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_u6cnw"]
+resource_name = "animation"
+length = 10.0
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer2/CenterContainer/TextureRect:custom_minimum_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 5, 10),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(300, 300), Vector2(500, 500)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mahj2"]
+_data = {
+&"RESET": SubResource("Animation_3smth"),
+&"animation": SubResource("Animation_u6cnw")
+}
+
+[node name="DescriptionScreen" type="CanvasLayer" unique_id=1673638997]
+script = ExtResource("1_r61v2")
+
+[node name="BackgroundForest" type="ParallaxBackground" parent="." unique_id=64851527]
+script = ExtResource("1_4ptff")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="BackgroundForest" unique_id=384764492]
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer" unique_id=1769909180]
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("2_r61v2")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="BackgroundForest" unique_id=1839283447]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer2" unique_id=1080898498]
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("3_3smth")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="BackgroundForest" unique_id=1255542346]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1422, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="BackgroundForest/ParallaxLayer3" unique_id=1501146184]
+scale = Vector2(4.444, 4.444)
+texture = ExtResource("4_u6cnw")
+centered = false
+
+[node name="Control" type="Control" parent="." unique_id=822075806]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=587397419]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer" unique_id=664074466]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainer" unique_id=691935692]
+layout_mode = 2
+
+[node name="BackButton" type="Button" parent="Control/VBoxContainer/MarginContainer/HBoxContainer" unique_id=98306638]
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 0
+theme = ExtResource("5_mahj2")
+text = "Назад"
+
+[node name="CheckButton" type="CheckButton" parent="Control/VBoxContainer/MarginContainer/HBoxContainer" unique_id=374233060]
+layout_mode = 2
+theme = ExtResource("5_mahj2")
+text = "Включить анимацию"
+
+[node name="MarginContainer2" type="MarginContainer" parent="Control/VBoxContainer" unique_id=67535518]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/VBoxContainer/MarginContainer2" unique_id=1172116704]
+layout_mode = 2
+theme_override_constants/separation = 46
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/VBoxContainer/MarginContainer2/HBoxContainer" unique_id=1544323504]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("5_mahj2")
+
+[node name="MarginContainer" type="MarginContainer" parent="Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer" unique_id=1307493838]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer/MarginContainer" unique_id=1502056822]
+layout_mode = 2
+theme = ExtResource("5_mahj2")
+text = "Текст описания"
+
+[node name="PanelContainer2" type="PanelContainer" parent="Control/VBoxContainer/MarginContainer2/HBoxContainer" unique_id=583745153]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("5_mahj2")
+
+[node name="CenterContainer" type="CenterContainer" parent="Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer2" unique_id=52876137]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control/VBoxContainer/MarginContainer2/HBoxContainer/PanelContainer2/CenterContainer" unique_id=2022728889]
+layout_mode = 2
+texture = ExtResource("7_3smth")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=985049708]
+active = false
+libraries/ = SubResource("AnimationLibrary_mahj2")
+autoplay = &"animation"
+
+[connection signal="pressed" from="Control/VBoxContainer/MarginContainer/HBoxContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="toggled" from="Control/VBoxContainer/MarginContainer/HBoxContainer/CheckButton" to="." method="_on_check_button_toggled"]

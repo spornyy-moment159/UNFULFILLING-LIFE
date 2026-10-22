@@ -1,0 +1,37 @@
+[gd_resource type="Theme" format=3 uid="uid://c4lmege16dhqe"]
+
+[ext_resource type="StyleBox" uid="uid://c0clsbcfx64ld" path="res://resourses/styles/style_clickable_normal.tres" id="2_dxb84"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fq1et"]
+bg_color = Color(0.5294118, 0.30588236, 0.24705882, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(0.4, 0.24313726, 0.32156864, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0.7058824, 0.7764706, 0.9607843, 0.25490198)
+shadow_size = 50
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7oh8c"]
+bg_color = Color(0.5294118, 0.30588236, 0.24705882, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.4, 0.24313726, 0.32156864, 1)
+border_blend = true
+shadow_color = Color(0.7058824, 0.7764706, 0.9607843, 0.25490198)
+shadow_size = 50
+
+[resource]
+Label/constants/outline_size = 10
+Label/font_sizes/font_size = 24
+Label/styles/normal = SubResource("StyleBoxFlat_fq1et")
+PanelContainer/styles/panel = ExtResource("2_dxb84")
+RichTextLabel/constants/outline_size = 10
+RichTextLabel/styles/normal = SubResource("StyleBoxFlat_7oh8c")

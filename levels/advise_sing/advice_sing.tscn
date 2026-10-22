@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dqubrks3edvku"]
+
+[ext_resource type="Script" uid="uid://bremt0ychm6jk" path="res://levels/advise_sing/advice_sing.gd" id="1_mcdwo"]
+[ext_resource type="Texture2D" uid="uid://2bfbeox5maha" path="res://assets/decorations/sign.png" id="1_tv8jx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l001d"]
+
+[node name="AdviceSing" type="Area2D" unique_id=593319199]
+collision_mask = 2
+script = ExtResource("1_mcdwo")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1884088955]
+position = Vector2(0, -15.5)
+texture = ExtResource("1_tv8jx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1893977707]
+position = Vector2(0, -15)
+shape = SubResource("CircleShape2D_l001d")
+
+[node name="Advice" type="Sprite2D" parent="." unique_id=1180101529]
+visible = false
+position = Vector2(0, -41)
+
+[node name="DelayTimer" type="Timer" parent="." unique_id=1670006033]
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
+[connection signal="timeout" from="DelayTimer" to="." method="_on_delay_timer_timeout"]

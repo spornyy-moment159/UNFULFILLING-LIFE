@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dwt58ixo7itve"]
+
+[ext_resource type="Script" uid="uid://jd2m01inuoqs" path="res://enemies/enemy_base.gd" id="1_tllp7"]
+
+[node name="EnemyBase" type="CharacterBody2D" unique_id=621383916 groups=["enemies"]]
+collision_layer = 8
+collision_mask = 3
+script = ExtResource("1_tllp7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=803890039]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=587325446]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1101858851]
+
+[node name="AttackRoot" type="Node2D" parent="." unique_id=1401376833]
+
+[node name="AttackMark" type="Marker2D" parent="AttackRoot" unique_id=481839878]
+rotation = 3.1415927
+scale = Vector2(1, -1)

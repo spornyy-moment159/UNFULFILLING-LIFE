@@ -1,0 +1,104 @@
+[gd_scene format=3 uid="uid://iqtqlnopumtp"]
+
+[ext_resource type="Theme" uid="uid://c4lmege16dhqe" path="res://resourses/styles/style_alt.tres" id="1_paarp"]
+[ext_resource type="Script" uid="uid://b4mmy8bobfjkq" path="res://menu/level_choice_menu/level_panel.gd" id="2_frswj"]
+[ext_resource type="Texture2D" uid="uid://dxsarjyv0b4u6" path="res://assets/coin/coin_1.png" id="3_nh48x"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4npg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lcexr"]
+bg_color = Color(0.23047015, 0.13124016, 0.23669928, 1)
+draw_center = false
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.27058825, 0.23921569, 0.30980393, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0.5647059, 0.36862746, 0.5764706, 1)
+shadow_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d4npg"]
+bg_color = Color(0.5647059, 0.36862746, 0.5764706, 1)
+draw_center = false
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(0.27058825, 0.23921569, 0.30980393, 1)
+border_blend = true
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0.6509804, 0.5803922, 0.5254902, 0.7882353)
+shadow_size = 20
+
+[node name="LevelPanel" type="PanelContainer" unique_id=2085026495]
+theme = ExtResource("1_paarp")
+script = ExtResource("2_frswj")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=644212696]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=902224654]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1625356285]
+layout_mode = 2
+
+[node name="LevelCompletedIcon" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=453526209]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+expand_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1077993271]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_paarp")
+text = "Название уровня"
+horizontal_alignment = 1
+max_lines_visible = 1
+
+[node name="CoinIcon" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=516451777]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+texture = ExtResource("3_nh48x")
+expand_mode = 1
+
+[node name="CoinCounter" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=191823540]
+layout_mode = 2
+size_flags_horizontal = 8
+theme = ExtResource("1_paarp")
+text = "0/1"
+
+[node name="TitleTexture" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=2084296293]
+custom_minimum_size = Vector2(450, 300)
+layout_mode = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Description" type="RichTextLabel" parent="MarginContainer/VBoxContainer" unique_id=458626977]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_paarp")
+text = "Описание уровняОписание уровняОписание уровняОписание уровняОписание уровняОписание уровняОписание уровняОписание уровняОписание уровняОписание уровня"
+
+[node name="LevelButton" type="Button" parent="." unique_id=1747908238]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_d4npg")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_lcexr")
+theme_override_styles/hover = SubResource("StyleBoxFlat_d4npg")
+
+[connection signal="pressed" from="LevelButton" to="." method="_on_level_button_pressed"]

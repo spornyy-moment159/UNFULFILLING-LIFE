@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dvn7cmi0yg4ki"]
+
+[ext_resource type="PackedScene" uid="uid://dur20smb6jsgr" path="res://levels/level_base.tscn" id="1_nnn84"]
+[ext_resource type="Script" uid="uid://bk005dej4yuh4" path="res://levels/level_02.gd" id="2_8yqd8"]
+[ext_resource type="PackedScene" uid="uid://bbvth3rg3ettf" path="res://levels/shop/shop.tscn" id="2_g685p"]
+[ext_resource type="Texture2D" uid="uid://drxm8xubnbj30" path="res://resourses/animated_texture/william.tres" id="5_2owmk"]
+[ext_resource type="Texture2D" uid="uid://nukkbaj5b5gi" path="res://assets/transition.jpg" id="6_2owmk"]
+[ext_resource type="Texture2D" uid="uid://cvctp7s4lbn4m" path="res://resourses/advice/advice_00_4_alt.png" id="7_cwmx8"]
+[ext_resource type="Texture2D" uid="uid://31ygj3fcjfv7" path="res://resourses/animated_texture/exit.tres" id="9_cwmx8"]
+
+[node name="Level_02" unique_id=1106297329 instance=ExtResource("1_nnn84")]
+script = ExtResource("2_8yqd8")
+level_number = 2
+
+[node name="World" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="0" unique_id=1428389400]
+layer_0/tile_data = PackedInt32Array(1179648, 393216, 13, 1179649, 65536, 0, 1179650, 65536, 0, 1179651, 65536, 0, 1179652, 65536, 0, 1179653, 65536, 0, 1179654, 65536, 0, 1179655, 65536, 0, 1179656, 65536, 0, 1179657, 65536, 0, 1179658, 65536, 0, 1179659, 65536, 0, 1179660, 65536, 0, 1179661, 65536, 0, 1179662, 65536, 0, 1179663, 65536, 0, 1179664, 65536, 0, 1179665, 65536, 0, 1179666, 65536, 0, 1179667, 65536, 0, 1179668, 65536, 0, 1179669, 65536, 0, 1179670, 65536, 0, 1179671, 65536, 0, 1179672, 65536, 0, 1179673, 65536, 0, 1114112, 196608, 1, 1048576, 196608, 1, 983040, 196608, 1, 917504, 196608, 1, 851968, 196608, 1, 786432, 196608, 1, 720896, 196608, 1, 655360, 196608, 1, 589824, 196608, 1, 1179674, 327680, 13, 1114138, 0, 2, 1048602, 0, 2, 983066, 0, 2, 917530, 0, 2, 851994, 0, 2, 786458, 0, 2, 720922, 0, 2, 655386, 0, 2, 589850, 0, 2, 524288, 196608, 1, 458752, 196608, 1, 393216, 196608, 2, 327680, 196608, 1, 524314, 0, 2, 458778, 0, 2, 393242, 0, 2, 327706, 0, 2, 262170, 0, 2, 262144, 196608, 2)
+
+[node name="Decorations" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="1" unique_id=1852819080]
+layer_0/tile_data = PackedInt32Array(14090300, 2, 0, 14090308, 2, 0, 14090323, 2, 0, 14090329, 2, 0, 14090342, 2, 0, 14090345, 2, 0, 14090350, 2, 0, 14090364, 2, 0, 14090378, 2, 0, 14090387, 2, 0, 14090391, 2, 0, 14090395, 2, 0, 14090400, 2, 0, 14090486, 2, 0, 14090488, 2, 0, 14090491, 2, 0, 14090492, 2, 0, 14090515, 2, 0, 14090519, 2, 0, 14090524, 2, 0, 14090531, 2, 0, 14090535, 2, 0, 14090538, 2, 0, 14090539, 2, 0, 14090545, 2, 0, 14155805, 2, 0, 14155816, 2, 0, 14155817, 2, 0, 14155828, 2, 0, 14155839, 2, 0, 14155843, 2, 0, 14155849, 2, 0, 14155857, 2, 0, 14155863, 2, 0, 14155876, 2, 0, 14155890, 2, 0, 14155894, 2, 0, 14155897, 2, 0, 14155904, 2, 0, 14155912, 2, 0, 14155923, 2, 0, 14090423, 2, 0, 14090429, 2, 0, 14090435, 2, 0, 14090445, 2, 0, 14090448, 2, 0, 14090510, 2, 0, 14090530, 2, 0, 14090518, 2, 0, 14090511, 2, 0, 14090479, 2, 0, 14090465, 2, 0, 14090450, 2, 0, 14090438, 2, 0, 14090432, 2, 0, 14090431, 2, 0, 14090401, 2, 0, 14090379, 2, 0, 14090376, 2, 0, 14090365, 2, 0, 14090339, 2, 0, 14090335, 2, 0, 14090327, 2, 0, 14090317, 2, 0, 14090314, 2, 0, 14090279, 2, 0, 14090278, 2, 0, 14090275, 2, 0, 14090261, 2, 0, 14090258, 2, 0, 14090254, 2, 0, 14155834, 2, 0, 14155835, 2, 0, 14155842, 2, 0, 14155859, 2, 0, 14155871, 2, 0, 14155879, 2, 0, 14155880, 2, 0, 14155891, 2, 0, 14155900, 2, 0, 14155914, 2, 0, 14155921, 2, 0, 14155922, 2, 0, 14155933, 2, 0, 14155935, 2, 0, 14155941, 2, 0, 14090420, 2, 0, 14090424, 2, 0, 14090440, 2, 0, 14090463, 2, 0, 14090464, 2, 0, 14090472, 2, 0, 14090489, 2, 0, 14090544, 2, 0, 14090541, 2, 0, 14090532, 2, 0, 14090516, 2, 0, 14090494, 2, 0, 14090478, 2, 0, 14090468, 2, 0, 14090466, 2, 0, 14090437, 2, 0, 14090388, 2, 0, 14090385, 2, 0, 14090383, 2, 0, 14090374, 2, 0, 14090370, 2, 0, 14090369, 2, 0, 14090332, 2, 0, 14090310, 2, 0, 14090309, 2, 0, 14090295, 2, 0, 14090276, 2, 0, 14090259, 2, 0, 13893804, 0, 0, 13893744, 0, 0, 13893694, 0, 0, 13828385, 0, 0, 13238533, 5, 0, 13303993, 5, 0, 14024848, 6, 0, 13959197, 7, 0)
+
+[node name="HUD" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="4" unique_id=333963107]
+visible = false
+
+[node name="PlayerSpawnPoint" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="5" unique_id=1612886382]
+position = Vector2(69, 400)
+
+[node name="LevelExitPoint" parent="Pausable" parent_id_path=PackedInt32Array(1694228243) index="6" unique_id=1276048459]
+position = Vector2(385, 49)
+
+[node name="Shop" parent="Pausable/CheckPointsRootNode" parent_id_path=PackedInt32Array(348980325) index="0" unique_id=120510024 instance=ExtResource("2_g685p")]
+position = Vector2(450, 432)
+
+[node name="LevelExitPoint2" type="Marker2D" parent="Pausable/LevelExitRootNode" parent_id_path=PackedInt32Array(640269245) index="1" unique_id=39258251]
+position = Vector2(437, 149)
+
+[node name="DialogMenu" parent="WhenPaused" parent_id_path=PackedInt32Array(1020198057) index="1" unique_id=1505179416]
+textures = Array[Texture2D]([ExtResource("5_2owmk"), ExtResource("6_2owmk"), ExtResource("7_cwmx8"), ExtResource("9_cwmx8")])
+checkpoint_number = 2

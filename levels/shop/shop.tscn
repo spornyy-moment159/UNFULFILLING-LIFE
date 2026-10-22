@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bbvth3rg3ettf"]
+
+[ext_resource type="Texture2D" uid="uid://vhomukx6o3ha" path="res://assets/decorations/shop_anim.png" id="1_rkbot"]
+[ext_resource type="Script" uid="uid://co7vtmungh08y" path="res://levels/shop/shop.gd" id="1_yfwmk"]
+
+[sub_resource type="Animation" id="Animation_rkbot"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_yfwmk"]
+resource_name = "idle"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0, 5]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2tlbo"]
+_data = {
+&"RESET": SubResource("Animation_rkbot"),
+&"idle": SubResource("Animation_yfwmk")
+}
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l001d"]
+radius = 23.75
+
+[node name="Shop" type="Area2D" unique_id=120510024]
+collision_mask = 2
+script = ExtResource("1_yfwmk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1891427942]
+position = Vector2(0, -64.12)
+texture = ExtResource("1_rkbot")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1888990909]
+libraries/ = SubResource("AnimationLibrary_2tlbo")
+autoplay = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=403629955]
+visible = false
+position = Vector2(0, -23.695)
+shape = SubResource("CircleShape2D_l001d")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

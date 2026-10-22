@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cyo3gi7o8xku1"]
+
+[ext_resource type="PackedScene" uid="uid://binh6fma8i1py" path="res://levels/lader/lader_base.tscn" id="1_l5web"]
+[ext_resource type="Texture2D" uid="uid://crhli2pc6lim1" path="res://resourses/texture_res/lader_middle.tres" id="2_a18m1"]
+
+[node name="LaderMiddle" unique_id=1464915466 instance=ExtResource("1_l5web")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=2013015127]
+texture = ExtResource("2_a18m1")

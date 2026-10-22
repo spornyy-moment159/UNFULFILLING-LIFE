@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b25jqdb1trar8"]
+
+[ext_resource type="PackedScene" uid="uid://binh6fma8i1py" path="res://levels/lader/lader_base.tscn" id="1_2nxs3"]
+[ext_resource type="Texture2D" uid="uid://bpo5mn6wakl75" path="res://resourses/texture_res/lader_top.tres" id="2_qe5fw"]
+
+[node name="LaderTop" unique_id=1464915466 instance=ExtResource("1_2nxs3")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=2013015127]
+texture = ExtResource("2_qe5fw")

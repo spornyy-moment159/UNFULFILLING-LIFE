@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" format=3 uid="uid://d1ali7trebaty"]
+
+[ext_resource type="Texture2D" uid="uid://b1vgwn22d2r7y" path="res://assets/oak_woods_tileset.png" id="1_6oiaa"]
+
+[resource]
+atlas = ExtResource("1_6oiaa")
+region = Rect2(360, 240, 24, 24)
