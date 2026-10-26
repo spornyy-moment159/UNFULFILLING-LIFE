@@ -11,6 +11,7 @@ enum id{
 	LEVEL_04,
 	END_SCREEN,
 	BONUS_SCREEN,
+	INTRO,
 }
 
 const scenes_dictionary: Dictionary = {
@@ -24,6 +25,7 @@ const scenes_dictionary: Dictionary = {
 	id.LEVEL_02:["res://levels/level_02.tscn", "res://resourses/text_files/level_02/level_02_title.txt", "res://resourses/text_files/level_02/level_02_description.txt", "res://resourses/text_files/level_02/level_02_texture.png"],
 	id.LEVEL_03:["res://levels/level_03.tscn", "res://resourses/text_files/level_03/level_03_title.txt", "res://resourses/text_files/level_03/level_03_description.txt", "res://resourses/text_files/level_03/level_03_texture.jpg"],
 	id.LEVEL_04:["res://levels/level_04.tscn", "res://resourses/text_files/level_04/level_04_title.txt", "res://resourses/text_files/level_04/level_04_description.txt", "res://resourses/text_files/level_04/level_04_texture.jpg"],
+	id.INTRO:["res://intro/intro.tscn"]
 }
 
 func get_scene_path(_id: id) -> NodePath:

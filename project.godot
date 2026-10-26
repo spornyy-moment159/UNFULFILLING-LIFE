@@ -13,6 +13,7 @@ config_version=5
 config/name="UNFULFILLING LIFE"
 run/main_scene="uid://il8cevapy1qw"
 config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/image="uid://crg8ubwdh7j30"
 config/icon="uid://bub7cohpgjdk4"
 
 [autoload]

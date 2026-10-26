@@ -5,5 +5,6 @@
 [node name="Main" type="Node" unique_id=480457053]
 process_mode = 3
 script = ExtResource("1_53q0u")
+start_scene = 10
 
 [node name="CurrentSceneRoot" type="Node" parent="." unique_id=1984306650]

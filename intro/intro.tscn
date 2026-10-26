@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://1mf0awnax253"]
+
+[ext_resource type="VideoStream" uid="uid://d4n28dn0kqjpg" path="res://assets/intro/Smile.ogv" id="1_fpmxm"]
+[ext_resource type="Script" uid="uid://xd78ikkl8g33" path="res://intro/intro.gd" id="1_jkt4n"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l001d"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Intro" type="CanvasLayer" unique_id=181051409]
+script = ExtResource("1_jkt4n")
+
+[node name="Panel" type="Panel" parent="." unique_id=844661679]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_l001d")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=488485008]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="CenterContainer" unique_id=1413965360]
+layout_mode = 2
+stream = ExtResource("1_fpmxm")
+autoplay = true
+
+[connection signal="finished" from="CenterContainer/VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

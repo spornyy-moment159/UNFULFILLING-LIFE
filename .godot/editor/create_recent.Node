@@ -1,3 +1,7 @@
+Panel
+CenterContainer
+VideoStreamPlayer
+CanvasLayer
 Node
 MeshInstance3D
 Item
@@ -9,7 +13,3 @@ Button
 Timer
 ProgressBar
 AnimationPlayer
-CollisionShape2D
-Area2D
-PathFollow2D
-Path2D
